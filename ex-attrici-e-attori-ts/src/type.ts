@@ -1,4 +1,4 @@
-type person = {
+type Person = {
   readonly id: number;
   readonly name: string;
   birth_year: number;
@@ -7,4 +7,21 @@ type person = {
   image: string;
 };
 
-export type { person };
+type Actress = {
+  most_famous_movie: [string, string, string];
+  awards: string;
+  nationality:
+    | "American"
+    | "British"
+    | "Australian"
+    | "Israeli-American"
+    | "South African"
+    | "French"
+    | "Indian"
+    | "Israeli"
+    | "Spanish"
+    | "South Korean"
+    | "Chinese";
+};
+
+export type { Person, Actress };
